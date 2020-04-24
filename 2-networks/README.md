@@ -12,7 +12,7 @@ The purpose of this step is to setup shared VPCs with default DNS, NAT, Private 
 ### Setup to run via Cloud Build
 1. Clone repo `gcloud source repos clone gcp-networks --project=YOUR_CLOUD_BUILD_PROJECT_ID`
 1. Navigate into the repo `cd gcp-org` and change to a non master branch `git checkout -b plan`
-1. Copy contents of foundation to new repo `cp -R ../terraform-example-foundation/2-networks/* .`
+1. Copy contents of foundation to new repo `cp -R ../terraform-example-foundation/2-networks/* .` (modify accordingly based on your current directory)
 1. Rename terraform.example.tfvars to terraform.tfvars and update the file with values from your environment and bootstrap.
 1. Rename backend.tf.example backend.tf and update with your bucket from bootstrap.
 1. Commit changes with `git add .` and `git commit -m 'Your message'`
